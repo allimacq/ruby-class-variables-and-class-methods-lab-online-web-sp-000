@@ -46,8 +46,8 @@ class Song
     @@genre_count
   end
   
+  #similar to the genre_count method above
   def self.artist_count
-    #puts @@artists
     @@artists.each do |artist|
       if @@artist_count[artist] == nil
         @@artist_count[artist] = 1 
@@ -57,6 +57,6 @@ class Song
     end
     @@artist_count
   end
-    #binding.pry
+
   
 end
