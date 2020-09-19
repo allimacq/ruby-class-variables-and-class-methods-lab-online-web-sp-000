@@ -49,9 +49,9 @@ class Song
   def self.artist_count
     #puts @@artists
     @@artists.each do |artist|
-      if @@artists[artist] == nil
+      if @@artist_count[artist] == nil
         @@artist_count[artist] = 1 
-      elsif @@artist[artist] != nil
+      elsif @@artist_count[artist] != nil
         @@artist_count[artist] += 1
       end
     end
